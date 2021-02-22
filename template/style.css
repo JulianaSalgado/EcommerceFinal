@@ -1,0 +1,94 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Layout site */
+.container{
+    display: grid;
+    grid-template-areas: 'header' 'main''footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    height: 100%;
+}
+header{
+    grid-area: header;
+    background-color: mediumvioletred;
+}
+main{
+    grid-area: main;
+    padding: 10px;
+}
+footer{
+    grid-area: footer;
+    background-color: mediumvioletred;
+    color: white
+}
+
+/*   ---    */
+h1{
+    font-size: 15px;
+    padding: 8px 0;
+}
+h2{
+    font-size: 19px;
+    padding: 10px 0;
+}
+a{
+    text-decoration: none;
+}
+a.marca{
+    color: white;
+    font-size: 25px;
+}
+a:hover{
+    color:olivedrab;
+}
+header a{
+    color: white;
+    padding: 11px;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.row.central{
+    justify-content: center;
+}
+img{
+    border-radius: 5px;
+}
+img.medio{
+    max-width: 290px;
+    width: 100%;
+}
+
+.divisao{
+    border: 1px gray solid;
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin: 10px;
+}
+.divisao-corpo{
+    padding: 10px;
+}
+.divisao-corpo > * {
+    margin-bottom: 6px;
+}
+.preco{
+    font-size: 14px;
+}
+/*  Avaliacao    */
+.avaliacao{
+    color:maroon;
+    margin: 1px;
+
+}
